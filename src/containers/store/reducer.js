@@ -7,7 +7,12 @@ const initilSate = {
 
 const reducer = (state=initilSate,action)=>{
 
-
+  if(action.type === 'INCREMENT'){
+      return{
+        
+          counter : state.counter + 2,
+      }
+  }
 
     return state;
 }
